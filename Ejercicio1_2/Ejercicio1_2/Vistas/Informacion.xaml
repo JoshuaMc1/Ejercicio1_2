@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2.Vistas.Informacion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#08B925" Padding="24" CornerRadius="0">
+                <Label 
+                Text="Informacion" 
+                HorizontalTextAlignment="Center" 
+                TextColor="White" 
+                FontSize="36"/>
+            </Frame>
+            <StackLayout Padding="10">
+                <Grid Margin="0, 20" RowSpacing="40">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="74"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label 
+                        Text="Nombre:" 
+                        TextColor="Black" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle" 
+                        Grid.Row="0" 
+                        Grid.Column="0" 
+                        VerticalTextAlignment="Center"/>
+                    <Entry 
+                        Text="{Binding nombres}" 
+                        TextColor="Black" 
+                        FontAttributes="Bold"
+                        FontSize="Subtitle" 
+                        Grid.Row="0" 
+                        Grid.Column="1" 
+                        IsEnabled="False"/>
+                    <Label 
+                        Text="Apellidos:" 
+                        TextColor="Black" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle" 
+                        Grid.Row="1" 
+                        Grid.Column="0" 
+                        VerticalTextAlignment="Center"/>
+                    <Entry 
+                        Text="{Binding apellidos}" 
+                        TextColor="Black" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle" 
+                        Grid.Row="1" 
+                        Grid.Column="1" 
+                        IsEnabled="False"/>
+                    <Label 
+                        Text="Edad:" 
+                        TextColor="Black" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle" 
+                        Grid.Row="2" 
+                        Grid.Column="0" 
+                        VerticalTextAlignment="Center"/>
+                    <Entry 
+                        Text="{Binding edad}" 
+                        TextColor="Black" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle" 
+                        Grid.Row="2" 
+                        Grid.Column="1" 
+                        IsEnabled="False"/>
+                    <Label 
+                        Text="Correo:" 
+                        TextColor="Black" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle" 
+                        Grid.Row="3" 
+                        Grid.Column="0" 
+                        VerticalTextAlignment="Center"/>
+                    <Entry 
+                        Text="{Binding correo}" 
+                        TextColor="Black" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle" 
+                        Grid.Row="3" 
+                        Grid.Column="1" 
+                        IsEnabled="False"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

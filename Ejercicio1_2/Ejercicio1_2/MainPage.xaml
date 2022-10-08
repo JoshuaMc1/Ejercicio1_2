@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#08B925" Padding="24" CornerRadius="0">
+            <Label 
+                Text="Ejercicio 1.2" 
+                HorizontalTextAlignment="Center" 
+                TextColor="White" 
+                FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="10">
+            <StackLayout Margin="0, 10, 0, 10">
+                <Label 
+                    Text="Nombres" 
+                    TextColor="Black" 
+                    FontAttributes="Bold"/>
+                <Entry 
+                    x:Name="txtNombres" 
+                    Placeholder="Ingrese su nombre" 
+                    MaxLength="50" 
+                    Keyboard="Text"/>
+            </StackLayout>
+            <StackLayout Margin="0, 10, 0, 10">
+                <Label 
+                    Text="Apellidos" 
+                    TextColor="Black" 
+                    FontAttributes="Bold"/>
+                <Entry 
+                    x:Name="txtApellidos" 
+                    Placeholder="Ingrese su apellido" 
+                    MaxLength="50" 
+                    Keyboard="Text"/>
+            </StackLayout>
+            <StackLayout Margin="0, 10, 0, 10">
+                <Label 
+                    Text="Edad" 
+                    TextColor="Black" 
+                    FontAttributes="Bold"/>
+                <Entry 
+                    x:Name="txtEdad" 
+                    Placeholder="Ingrese su edad" 
+                    MaxLength="3" 
+                    Keyboard="Numeric"/>
+            </StackLayout>
+            <StackLayout Margin="0, 10, 0, 10">
+                <Label 
+                    Text="Correo electrónico" 
+                    TextColor="Black" 
+                    FontAttributes="Bold"/>
+                <Entry 
+                    x:Name="txtCorreo" 
+                    Placeholder="Ingrese su correo electrónico" 
+                    MaxLength="100" 
+                    Keyboard="Email"/>
+            </StackLayout>
+            <StackLayout Margin="0, 60, 0, 0">
+                <Button 
+                    x:Name="btnEnviar" 
+                    Text="Enviar información" 
+                    BackgroundColor="#08B925" 
+                    TextColor="White" 
+                    CornerRadius="12"
+                    Clicked="btnEnviar_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
